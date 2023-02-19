@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: rgb(12, 105, 135);
+    --secondary-color: rgb(10, 80, 100);
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.container {
+    width: 640px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 8px;
+}
+
+form button {
+    margin-top: 30px;
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+form input:focus, form input:hover {
+    outline: 1px solid var(--primary-color);
+} 
+
+form button:hover {
+    background-color: var(--secondary-color);
+}
+
+.tabela {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+th {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.p-resultado {
+    height: 50px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-top: 30px;
+}
+
+#p-valid {
+    background-color: rgb(85, 235, 145);
+}
+
+#p-invalid {
+    background-color: rgb(250, 130, 130);
+}
